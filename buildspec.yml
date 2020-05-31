@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      - pip3 install pytest
+  build:
+    commands:
+      - python -m pytest --junitxml=tests/test_output/output
+
+reports:
+  pytest_reports:
+    files:
+      - output
+    base-directory: tests/test_output
+    file-format: JunitXml

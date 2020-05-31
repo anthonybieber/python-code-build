@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="Anthonys-MacBook-Pro.local" name="pytest" skipped="0" tests="3" time="0.161" timestamp="2020-05-31T13:08:26.838985"><testcase classname="test_app" file="test_app.py" line="3" name="test_anthony" time="0.001"></testcase><testcase classname="tests.test_sample" file="tests/test_sample.py" line="5" name="test_answer" time="0.001"></testcase><testcase classname="tests.test_sample" file="tests/test_sample.py" line="8" name="test_incorrect" time="0.001"><failure message="assert 8 == 9
+ +  where 8 = func(7)">def test_incorrect():
+&gt;       assert func(7) == 9
+E       assert 8 == 9
+E        +  where 8 = func(7)
+
+tests/test_sample.py:10: AssertionError</failure></testcase></testsuite></testsuites>
