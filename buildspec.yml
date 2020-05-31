@@ -9,7 +9,7 @@ phases:
       - mkdir test-reports
   build:
     commands:
-    - pytest
+    - python -m pytest
       --html=test-reports/report.html
       --self-contained-html
       -s
@@ -18,7 +18,6 @@ phases:
       --cov-report=html:test-reports/coverage
       --junitxml=test-reports/junit.xml
       --log-file=test-reports/logs.txt
-      tests
 reports:
   coverage:
     files:
