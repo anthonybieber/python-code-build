@@ -13,6 +13,6 @@ phases:
 reports:
   pytest_reports:
     files:
-      - output
+      - '**/*'
     base-directory: tests/test_output
     file-format: JunitXml
