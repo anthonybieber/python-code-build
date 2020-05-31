@@ -6,13 +6,15 @@ phases:
       python: 3.7
     commands:
       - pip3 install pytest
+      - mkdir test-reports
   build:
     commands:
-      - python -m pytest --junitxml=tests/test_output/output
+    - python -m pytest --junitxml=test-reports/junit.xml tests
 
 reports:
-  pytest_reports:
+  report:
     files:
-      - output
-    base-directory: tests/test_output
+      - 'junit.xml'
+    base-directory: 'test-reports'
+    discard-paths: yes
     file-format: JunitXml
