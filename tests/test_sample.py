@@ -7,4 +7,7 @@ def test_answer():
     assert func(3) == 4
 
 def test_incorrect():
-    assert func(8) == 10
+    assert func(8) == 9
+
+def test_bullshit():
+assert 'hello' == 'hello'
