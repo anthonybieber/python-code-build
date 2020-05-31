@@ -10,4 +10,4 @@ def test_incorrect():
     assert func(8) == 9
 
 def test_bullshit():
-assert 'hello' == 'hello'
+    assert 'hello' == 'hello'
